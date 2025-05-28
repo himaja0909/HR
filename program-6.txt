@@ -1,0 +1,90 @@
+program-6:
+
+1. import turtle
+   t=turtle.Turtle()
+  t.forward(100)
+  turtle.mainloop()
+
+
+sample output:
+
+2. import turtle
+   t=turtle.Turtle()
+   t.circle(50)
+   turtle.mainloop()
+
+
+sample output:
+
+
+
+3.  import turtle
+  t=turtle.Turtle()
+  turtle.bgcolor("red")
+  turtle.mainloop()
+
+sample output:
+
+
+4.
+sample output:import turtle
+My_pen=turtle.Turtle()
+for i in range(4):
+   My_pen.forward(50)
+   My_pen.right(90)
+turtle.done()
+
+
+sample output:
+
+
+
+
+5.
+import turtle
+My_pen=turtle.Turtle()
+for i in range (50):
+    My_pen.forward(50)
+    My_pen.right(144)
+turtle.done()   
+
+
+sample output:
+ 
+
+
+6.import turtle
+polygon=turtle.Turtle()
+My_num_sides=6
+My_side_length=70
+My_angle=360.0/My_num_sides
+for i in range(My_num_sides):
+    polygon.forward(My_side_length)
+    polygon.right(My_angle)
+turtle.done()
+
+sample output:
+
+
+7.import turtle
+colors=["red","purple","blue","green","orange","yellow"]
+My_pen=turtle.pen()
+turtle.bgcolor("black")
+for x in range (360):
+    My_pen.pencolor(colors[x%6])
+    My_pen.width(x/100+1)
+    my_pen.forward(x)
+    my_pen.left(59)
+
+sample output:
+
+
+
+
+
+
+
+
+
+
+
