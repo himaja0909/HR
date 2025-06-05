@@ -1,0 +1,95 @@
+program-8:
+
+1.
+import random
+
+random_number=random.randint(2,10)
+
+print("Random number:",random_number)
+
+output:
+Random number: 5
+
+2.
+import datetime
+
+current_datetime=datetime.datetime.now()
+
+print("current date and time:",current_datetime)
+
+output:
+current date and time: 2025-06-04 05:19:41.139029
+
+3.
+import math
+
+number=25
+
+sqrt=math.sqrt(number)
+
+print("sqrt Root:",sqrt)
+
+output:
+sqrt Root: 5.0
+
+
+4.
+import math
+
+factorial=math.factorial(5)
+
+print("factorial:",factorial)
+
+output:
+factorial: 120
+
+5.
+
+file_path="example.txt"
+with open(file_path,"w")as file:
+    file.write("Hello,world!")
+with open(file_path,"r")as file:
+    content=file.read()
+    print("file content:",content)
+
+output:
+file content: Hello,world!
+
+
+6.
+import string
+
+text="hello,world!"
+
+uppercase_text=text.upper()
+
+print("uppercase text:",uppercase_text)
+
+output:
+uppercase text: HELLO,WORLD!
+
+7.
+import secrets
+
+random_number=secrets.randbelow(10)+1
+
+print("crypto graphicallt secure random number:",random_number)
+
+output:
+crypto graphicallt secure random number: 1
+
+
+8.
+import platform
+system_name=platform.system()
+node_name=platform.node()
+processor_name=platform.processor()
+print("system Name:",system_name)
+print("Node Name:",node_name)
+print("processor Name:",processor_name)
+
+output:
+system Name: Windows
+Node Name: miclab
+processor Name: Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
