@@ -1,0 +1,190 @@
+program-4
+
+1.
+def gcd(a,b):
+   
+ while b!=0:
+        
+a,b=b,a%b
+    
+return a
+
+num1=int(input("Enter the first number:"))
+
+num2=int(input("Enter the second number:"))
+
+result=gcd(num1,num2)
+
+print("The GCD of",num1,"and",num2,"is",result)
+
+output:
+Enter the first number:18
+
+Enter the second number:36
+
+The GCD of 18 and 36 is 18
+
+2.
+def check_even_odd(number):
+  
+  if number%2==0:
+     
+   return "Even"
+   
+ else:
+    
+   return "odd"
+ 
+   num=int(input("Enter a number:"))
+    
+result=check_even_odd(num)
+ 
+   print("The number is",result)
+
+output:
+
+enter a number:8
+the number is even
+
+
+3.
+def factorial(n):
+    
+if n==0:
+    
+ return 1
+    
+else:
+       
+ return n*factorial(n-1)
+
+for i in range(1,11):
+   
+ result=factorial(i)
+   
+ print("factorial of",i,"is",result)
+
+output:
+
+factorial of 1 is 1
+
+factorial of 2 is 2
+
+factorial of 3 is 6
+
+factorial of 4 is 24
+
+factorial of 5 is 120
+
+factorial of 6 is 720
+factorial of 7 is 5040
+factorial of 8 is 40320
+
+factorial of 9 is 362880
+
+factorial of 10 is 3628800
+
+
+
+4.
+def factorial(n):
+  
+  if n==0:
+       
+ return 1
+  
+  else:
+    
+  return n*factorial(n-1)
+
+num=int(input("Enter a stirng:"))
+
+result=factorial(num)
+
+print("The factorial of",num,"is",result)
+
+output:
+Enter a stirng:5
+
+The factorial of 5 is 120
+
+
+5.
+def calculate_sum(numbers):
+     
+total=0
+
+for num in numbers:
+ 
+Total+=num
+   
+return total    
+
+list=[]
+
+n=int(input("Enter the number of elements in the list:"))
+
+for i in range(n):
+   
+  num=Eval(input("Enetr element{}:",format(i+1)))
+list.append(num)
+
+result=calculate_sum(list)
+
+print("The sum of the list is",result)
+
+output:
+Enter the numbert of elements in the list:5
+Enter the element 1:10
+Enter the element2:20
+Enter the element3:30
+Enter the element 4:40
+Enter the element 5:50
+The sum of the list is 150
+
+
+
+6.
+
+
+def add(x,y):
+   
+ return x+y
+
+def subtract(x,y):
+   
+ return x-y
+
+def multiply(x,y):
+   
+ return x*y
+
+def divide(x,y):
+   
+ return x/y
+
+num1=float(input("Enter the first number:"))
+
+num2=float(input("Enter the second number:"))
+
+print("Addition:",add(num1,num2))
+
+print("subtraction:",subtract(num1,num2))
+
+print("multification:",multiply(num1,num2))
+
+print("Division:",divide(num1,num2))
+
+
+output:
+Enter the first number:10
+
+Enter the second number:5
+
+Addition: 15.0
+
+subtraction: 5.0
+
+multification: 50.0
+
+Division: 2.0
