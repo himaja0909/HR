@@ -1,0 +1,87 @@
+program_10
+
+1.
+
+try:
+  x = 10 / 0
+except Exception as e:
+ print("An error occurred:&quot;", str(e))
+
+output:
+An error occurred:&quot; division by zero
+
+
+2.
+
+try:
+   num = int(input("Enter a number:"))
+   result = 10 / num
+   print("Result:&quot;", result)
+except ValueError:
+  print("Error: Invalid input! Please enter a valid number")
+except ZeroDivisionError:
+  print("Error: Division by zero!")
+
+output:
+
+Enter a number:2
+
+Result:&quot; 5.0
+
+
+3.
+try:
+   num = int(input("Enter a number:"))
+   result = 10 / num
+except ValueError:
+ print("Error: Invalid input! Please enter a valid number.")
+except ZeroDivisionError:
+ print("Error: Division by zero!")
+else:
+  print("Result:&quot;, result")
+
+output:
+Enter a number:2
+
+Result:&quot; 5.0
+
+4.
+
+try:
+ file = open("myfile.txt&quot;")
+except IOError:
+ print("Error: Unable to read the file")
+finally:
+ file.close()
+
+OUTPUT:
+
+ERROR!
+
+Error: Unable to read the file
+ERROR!
+
+Traceback (most recent call last):
+ 
+ File "<main.py>", line 6, in <module>
+
+NameError: name 'file' is not defined
+
+
+5.
+
+try:
+   x = int(input("Enter a number upto 100:"))
+   if x > 100:
+    raise ValueError(x)
+except ValueError:
+   print("x is out of allowed range")
+else:
+   print("x is within the allowed range")
+
+OUTPUT:
+
+Enter a number upto 100:123
+
+x is out of allowed range
+
